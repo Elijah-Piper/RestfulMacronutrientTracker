@@ -20,11 +20,6 @@ public class MealServiceImpl implements MealService {
 
     @Override
     public List<Meal> getAllMeals() {
-        List<Meal> meals = this.mealDao.findAll();
-        for (Meal m : meals) {
-            System.out.println(m);
-        }
-
         return this.mealDao.findAll();
     }
 
